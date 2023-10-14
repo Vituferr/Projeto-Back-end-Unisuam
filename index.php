@@ -1,9 +1,10 @@
 <?php
-$host = 'localhost';
-$user = 'root';
-$pass = '';
-$db = 'empresa';
-$port = '3306';
+$host="localhost";
+$port=3306;
+$socket="";
+$user="root";
+$password="";
+$dbname="projeto";
 
 try {
     $connection = new PDO("mysql:host=$host;port=$port;dbname=$db", $user, $pass);
