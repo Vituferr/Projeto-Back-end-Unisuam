@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body {
+  margin: 20px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.main-cad {
+    width: 20vw;
+    height: 50vh;
+    display: flex;
+}
+
+.campos-cad {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    margin-left: 10cm;
+    background: #ff0707e7;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #fffffff3;
+  }
+
+.campos-cad > h1 {
+    color: #ffffff;      
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex;
+    justify-content: center;
+    margin: 10px 0px;
+  }
+  
+  .textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 4px;
+    background: #464545;
+    color: #ffffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #3f3e3e56;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  .textfield > label {
+    color: #2a2b2bde;
+    margin-bottom: 5px;
+  }
+  
+  .textfield > input::placeholder {
+    color: #f0ffff94;
+  }
+  
+  
+.btn-login {
+    width: 100%;
+    padding: 10px;
+    margin: 1px;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #cfcfcf;
+    background: #8d8d8d;
+  }
+
+  .btn-limpar {
+    width: 100%;
+    padding: 10px;
+    margin: 1px;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #cfcfcf;
+    background: #8d8d8d;
+  }
+
+
+button:hover{
+    background-color: rgb(67, 67, 67);
+}
+  .coluna{
+    display: flex;
+    padding: 6px;
+  }
+
+  .lado-esquerdo{
+    padding: 4px;
+  }
+
+  .lado-direito{
+    padding: 4px;
+  }
+
+  .coluna-btn{
+    display: flex;
+  }
+
+  .btn-esquerdo{
+    padding: 2px;
+  }
+
+  .btn-direito{
+    padding: 2px;
+  }
+
+@media only screen and (max-width: 950px){
+    .card-login{
+      width: 85%;
+    }
+  }
+  
+  @media only screen and (max-width: 600px){
+    .main-login{
+            flex-direction: column;
+    }
+    .coluna{
+        display: table-row;
+        align-content: column;
+    }
+
+    .campos-cad {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 45px;
+        margin-left: 2cm;
+        background: #ff0707e7;
+        border-radius: 20px;
+        box-shadow: 0px 10px 40px #fffffff3;
+    }
+
+    .textfield > input {
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        padding: 15px;
+        background: #464545;
+        color: #ffffffde;
+        font-size: 12pt;
+        box-shadow: 0px 10px 40px #3f3e3e56;
+        outline: none;
+        box-sizing: border-box;
+      }
+}
