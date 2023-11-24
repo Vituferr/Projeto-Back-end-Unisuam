@@ -49,15 +49,15 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="#about">Sobre nós</a></li>
+          <li><a class="nav-link scrollto" href="#services"></a></li>
           <li><a class="nav-link scrollto " href="#portfolio"> Gerencimamento de Usuarios</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#team"></a></li>
           <li class="dropdown"><a href="#"><span> Acesso</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Sou usuario</a></li>
-              <li class="dropdown"><a href="#"><span> Sou Master</span> <i class="bi bi-chevron-right"></i></a>
+              <li><a href="#">Sou usuario comum</a></li>
+              <li class="dropdown"><a href="#"><span> Sou usuario master</span> <i class="bi bi-chevron-right"></i></a>
                 
               </li>
               
