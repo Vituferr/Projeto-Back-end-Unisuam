@@ -56,8 +56,8 @@
           <li><a class="nav-link scrollto" href="#team"></a></li>
           <li class="dropdown"><a href="#"><span> Acesso</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Sou usuario comum</a></li>
-              <li class="dropdown"><a href="#"><span> Sou usuario master</span> <i class="bi bi-chevron-right"></i></a>
+              <li><a href="logincomum.php">Sou usuario comum</a></li>
+              <li class="dropdown"><a href="logincomum.php"><span> Sou usuario master</span> <i class="bi bi-chevron-right"></i></a>
                 
               </li>
               
