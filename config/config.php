@@ -7,9 +7,10 @@ $user = "root";
 $pass = "";
 $db = "projeto";
 
+//global $pdo; 
 try {
-    $connection = new PDO("mysql:host=$host;port=$port;dbname=$db", $user, $pass);
-    echo"Conexão realizada com sucesso";
+    $pdo = new PDO("mysql:host=$host;port=$port;dbname=$db", $user, $pass);
+    //echo"Conexão realizada com sucesso";
 } catch (PDOException $e) {
     echo "Erro de conexão com banco ". $e->getMessage();
 }

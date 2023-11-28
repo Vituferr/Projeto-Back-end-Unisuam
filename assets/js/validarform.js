@@ -166,6 +166,7 @@ function senhaValida(){
         compareSenha()
     }
 }
+
 function compareSenha(){
     if(campos[9].value == campos[10].vaalue && campos[10].value.length >= 8) {
         removeError(10)
@@ -173,3 +174,4 @@ function compareSenha(){
     setError(10)
     }
 }
+

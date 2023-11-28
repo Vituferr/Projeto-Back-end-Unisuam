@@ -1,12 +1,10 @@
 <?php
-include 'config/auth.php';
+// impede que o cache da pagina seja armazenado bloqueando o usuario de voltar a pagina logado.
+session_start();
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $login = $_POST['usuario'];
-    $senha = $_POST['senha'];
-
-    $_SESSION['msg'] = realizarAutenticacao($login, $senha);
-}
+header("Cache-Control: no-cache, no-store, must-revalidate");
+header("Pragma: no-cache");
+header("Expires: 0");
 ?>
 
 <!DOCTYPE html>
@@ -62,22 +60,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
           <li><a class="nav-link scrollto" href="#about">Sobre nós</a></li>
-          <li><a class="nav-link scrollto" href="cadastro.php">Cadastre-se</a></li>
+          <li><a class="nav-link scrollto" href="#services"></a></li>
+          <li><a class="nav-link scrollto " href="#portfolio"> Gerencimamento de Usuarios</a></li>
+          <li><a class="nav-link scrollto" href="#team"></a></li>
           <li class="dropdown"><a href="#"><span> Acesso</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="logincomum.php">Sou Aluno</a></li>
-              <li class="dropdown"><a href="loginmaster.php"><span> Sou Professor</span> <i class=""></i></a>
-                
+              <li><a href="logincomum.php">Sou usuario comum</a></li>
+              <li class="dropdown"><a href="logincomum.php"><span> Sou usuario master</span> <i class="bi bi-chevron-right"></i></a>
+
               </li>
-              
+
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#contact"></a></li>
+          <li><a class="nav-link scrollto" href="#contact">Nome usuario</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="#about" class="get-started-btn scrollto"></a>
+      <a href="config/logout.php" class="get-started-btn scrollto">Sair</a>
 
     </div>
   </header><!-- End Header -->
@@ -88,13 +88,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
       <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
         <div class="col-xl-6 col-lg-8">
-          <h1>Colegio Vitor Pereira<span>.</span></h1>
-          <h2>O fundamento essencial para o seu sucesso</h2>
+          <h1>Colegio Victor Pereira<span>.</span></h1>
+          <h2> O fundamento essencial para o seu sucesso</h2>
         </div>
       </div>
 
-      
-        
+      <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-paint-brush-line"></i>
+            <h3><a href="">Gerenciar Usuarios</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-bar-chart-box-line"></i>
+            <h3><a href="">Avaliações </a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-calendar-todo-line"></i>
+            <h3><a href="">Datas e aulas</a></h3>
+          </div>
+        </div>
+
       </div>
 
     </div>
@@ -102,10 +120,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   <main id="main">
 
-    
-    
-    
-    
+
+
+
+
 
 
 
@@ -121,7 +139,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               <div class="testimonial-item">
                 <img src="assets/img/logo.pmg.png" class="testimonial-img" alt="">
                 <h3>C. VP</h3>
-                
+
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   Escola de muita qualidade, faço destaque a competência e dedicação dos professores, que demonstram alta capacidade de transmitir conhecimento de forma clara e envolvente.
@@ -130,15 +148,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               </div>
             </div><!-- End testimonial item -->
 
-            
 
-      </div>
+
+          </div>
     </section><!-- End Testimonials Section -->
 
-    
 
 
-      </div>
+
+    </div>
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->

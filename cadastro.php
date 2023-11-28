@@ -15,7 +15,7 @@
 
 <body>
     <div class="main-cadastro">
-        <form action="cadastro_bd.php" id="formcad" method="post">
+        <form action="db_cadastro.php" id="formcad" method="post">
             <div class="campos-cad">
                 <h1>Faça seu cadastro</h1>
                 <div class="coluna">
@@ -99,15 +99,15 @@
                     <div class="btn-direito">
                         <button class="btn-limpar">Limpar</button>
                     </div>
-                    <div class="btn-volta">
+                    <div class="btn-esquerdo">
                         <button class="btn-limpar"><a href="index.php">Voltar</a></button>
                     </div>
                     
                 </div>
-                 </div>
+                 
                         
         </form>
-    </div>
-                 
+        <div id="mensagem-erro-senha" class="mensagem-erro">As senhas não coincidem.</div>
 </body>
+
 </html>
